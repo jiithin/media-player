@@ -15,7 +15,7 @@ function Home() {
       <div className='add-videos'>
         <Add setUploadVideoResponse={setUploadVideoResponse} />
       </div>
-      <button className='btn btn-info '>
+      <button className='btn btn-secondary '>
       <h6>
       <Link to={'/watchhistory'} style={{textDecoration:'none', fontSize:'21px'}}>Watch History <i class="fa-solid fa-clock-rotate-left"></i></Link>
       </h6>

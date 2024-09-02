@@ -9,15 +9,16 @@ function LandingPage() {
   return (
     <>
     
-    <Row className="mt-5 align-items-center justify-content-between w-100" style={{padding:'50px'}}>
+    {/* top */}
+    <Row className="mt-5 align-items-center justify-content-between w-100" >
     <Col></Col>
-    <Col lg={5}>
+    <Col sm={8} md={5} lg={5} className='p-5'>
       <h1 style={{fontSize:'40px'}}>Welcome to <span className='text-warning'>Media Player</span></h1>
       <p>Media player software application come with a variety of features to enhance the user’s viewing experience.It can stream videos from the internet and Playlist Management that Allows the user to create, save, and manage playlists of videos.</p>
       <button className='btn btn-info mt-4' onClick={()=>navigateByUrl('./home')}>Get Started</button>
     </Col>
-    <Col lg={5}>
-      <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/E02702440_Google_GMP_DV_360_Frequency_Management_Blog_Jan22_Blog_Header.gif" alt="" style={{borderRadius:'20px',width:'600px'}} />
+    <Col sm={8} md={5} lg={5}  >
+      <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/E02702440_Google_GMP_DV_360_Frequency_Management_Blog_Jan22_Blog_Header.gif" alt="" style={{borderRadius:'20px',width:'100%'}} />
     </Col>
     
     <Col></Col>
@@ -25,12 +26,13 @@ function LandingPage() {
     </Row>
 
 
-    <div className='container mb-5 mt-5 d-flex align-items-center justify-content-center flex-column'>
+{/* middle */}
+    <Row className=' mb-5 mt-5 d-flex align-items-center justify-content-between  w-100'>
       <h3 style={{fontWeight:'bolder'}}>Features</h3>
-      <div className='cards md-5 mt-5 d-flex align-items-center justify-content-between w-100'>
+ 
 
-
-      <Card style={{ width: '22rem', borderRadius:'40px', height:'30rem'  }} className='p-4 bg-light'>
+      <Col sm={12} md={4} lg={4} className='mt-3'>
+      <Card style={{ width: '24rem', borderRadius:'40px', height:'30rem'  }} className='p-4 bg-light' >
       <Card.Img variant="top" height={'200px'} width={'300px'} style={{borderRadius:'20px'}} src="https://i.pinimg.com/originals/9b/aa/33/9baa33afd36c03fb61142e657ac172be.gif" />
       <Card.Body>
         <Card.Title className='text-primary'>Managing Video</Card.Title>
@@ -40,9 +42,11 @@ function LandingPage() {
         <Button variant="primary" onClick={()=>navigateByUrl('./home')}>Go to Videos</Button>
       </Card.Body>
     </Card>
+    </Col>
+      
 
-
-    <Card style={{ width: '22rem',borderRadius:'40px', height:'30rem' }} className='p-4 bg-light'>
+    <Col sm={12} md={4} lg={4} className='mt-3'>
+    <Card style={{ width: '24rem',borderRadius:'40px', height:'30rem' }} className='p-4 bg-light'>
       <Card.Img variant="top" height={'200px'} width={'300px'} style={{borderRadius:'20px'}} src="https://i.pinimg.com/originals/29/c8/a8/29c8a863268ab7f9e4e03294952f084b.gif"  />
       <Card.Body>
         <Card.Title className='text-primary'>Video Catagories</Card.Title>
@@ -52,9 +56,11 @@ function LandingPage() {
         <Button variant="primary" onClick={()=>navigateByUrl('./home')}>Go to Categories</Button>
       </Card.Body>
     </Card>
+    </Col>
+    
 
-
-    <Card style={{ width: '22rem', borderRadius:'40px', height:'30rem'  }} className='p-4 bg-light'>
+    <Col sm={12} md={4} lg={4} className='mt-3'>
+    <Card style={{ width: '24rem', borderRadius:'40px', height:'30rem'  }} className='p-4 bg-light' >
       <Card.Img variant="top" height={'200px'} width={'300px'} style={{borderRadius:'20px'}} src="https://cdn.dribbble.com/users/428251/screenshots/2990220/elastic-list---dribbble.gif" />
       <Card.Body>
         <Card.Title className='text-primary'>Watch History</Card.Title>
@@ -64,37 +70,39 @@ function LandingPage() {
         <Button variant="primary" onClick={()=>navigateByUrl('./watchhistory')}>Go to Watch History</Button>
       </Card.Body>
     </Card>
+    </Col>
+    
 
 
-      </div>
-    </div>
 
+    </Row>
 
-    <div className='container border rounded p-5 d-flex items-align-center justify-content-between w-100'>
-      <div className='col-lg-5'>
+{/* last */}
+    <Row className=' border rounded p-5 d-flex items-align-center justify-content-between w-100'>
+      <Col sm={12} md={6} lg={6} className='text-something'>
         <h4 className='text-warning fw-bolder'>Simple Powerful & Fast</h4>
-        <h6 className='md-5 mt-3'>Play Everything <span className='text-info fw-bolder'>media player is able to play all types of media files, including audio, video, and streaming content.</span></h6>
+        <h6 className='md-5 mt-3'>Play Everything media player is able to play all types of media files, including audio, video, and streaming content.</h6>
 
         <br />
 
 
         <h4 className='text-warning fw-bolder'>Catagorize Videos</h4>
-        <h6 className='md-5 mt-3'>Categorizing videos <span className='text-info fw-bolder'>in a media player is the process of organizing your video files into different groups or categories, which can make it easier to manage and find specific videos.</span></h6>
+        <h6 className='md-5 mt-3'>Categorizing videos in a media player is the process of organizing your video files into different groups or categories, which can make it easier to manage and find specific videos</h6>
 
 
         <br />
 
         <h4 className='text-warning fw-bolder'>Managing Videos</h4>
-        <h6 className='md-5 mt-3'>Managing videos<span className='text-info fw-bolder'> in a media player involves organizing, accessing, and controlling the playback of your video files. You can add video files to your media player from various sources, such as your computer’s hard drive or an external device.</span></h6>
+        <h6 className='md-5 mt-3'>Managing videos in a media player involves organizing, accessing, and controlling the playback of your video files. You can add video files to your media player from various sources, such as your computer’s hard drive or an external device.</h6>
 
 
-      </div>
+      </Col>
 
-      <div className='video col-lg-5' >
-      <iframe style={{borderRadius:'7px'}} width="560" height="560" src="https://www.youtube.com/embed/1JPNFp0f53I" title="Calvin Harris, Sam Smith - Desire (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
+      <Col sm={12} md={6} lg={6}  >
+      <iframe style={{borderRadius:'20px'}} width="100%" height="100%" src="https://www.youtube.com/embed/1JPNFp0f53I" title="Calvin Harris, Sam Smith - Desire (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </Col>
 
-    </div>
+    </Row>
 
 
 

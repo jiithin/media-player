@@ -94,9 +94,9 @@ function Footer() {
 
             
 
-            <MDBCol md="4" lg="4" xl="5" className='mx-auto mb-md-0 mb-4'>
+            <MDBCol md="4" lg="4" xl="5" className='mx-auto align-items-center justify-content-center mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact Us</h6>
-              <form action=''>
+              {/* <form action=''>
           <MDBRow>
             
 
@@ -108,12 +108,12 @@ function Footer() {
               <button className='btn btn-primary'>Subscribe</button>
             </MDBCol>
           </MDBRow>
-        </form>
+        </form> */}
 
 
         
             <br />
-              <a href='' className='me-4 text-reset'>
+              <a href='' className=' me-4 text-reset'>
             <MDBIcon fab icon="facebook-f" />
           </a>
           <a href='' className='me-4 text-reset'>
@@ -146,9 +146,9 @@ function Footer() {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2024 Copyright:
+        © 2024  
         <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          Media Player Built with React
+          Media Player
         </a>
       </div>
     </MDBFooter>

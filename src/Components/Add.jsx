@@ -75,7 +75,7 @@ function Add({setUploadVideoResponse}) {
     <>
     <div  className='d-flex align-items-center'>
       
-      <button className='btn btn-primary' onClick={handleShow} > <h6 style={{ textDecoration:'none', fontSize:'21px'}}> Upload Videos <i class="fa-solid fa-upload"></i></h6></button>
+      <button className='btn btn-secondary' onClick={handleShow} > <h6 style={{ textDecoration:'none', fontSize:'21px'}}> Upload Videos <i class="fa-solid fa-upload"></i></h6></button>
 
       {/* modal */}
 
